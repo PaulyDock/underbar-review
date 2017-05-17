@@ -197,7 +197,7 @@
   _.some = function(collection, iterator) {
     // TIP: There's a very clever way to re-use every() here.
     iterator = iterator ? iterator : _.identity;
-    return (!_.every(collection, (element) => !iterator(element)))
+    return (!_.every(collection, (element) => !iterator(element)));
   };
 
 

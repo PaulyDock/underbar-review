@@ -149,7 +149,7 @@
       });
 
       it('should fail for a set containing no matching values', function() {
-        expect(_.some(['a', false, 0, 'yes'], _.identity)).to.be.false;        
+        expect(_.some([1, 3, 5, 7], isEven)).to.be.false;        
         // the behavior described by the `it` string
       });
 
